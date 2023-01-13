@@ -1,6 +1,5 @@
 module.exports = {
   root: true,
-
   env: {
     browser: true,
     node: true,
@@ -23,5 +22,20 @@ module.exports = {
 
   rules: {
     'vue/script-setup-no-uses-vars': 'off',
+    'prettier/prettier': [
+      'error',
+      {
+        endOfLine: 'auto',
+      },
+    ],
   },
+
+  overrides: [
+    {
+      files: ['pages/**/*.vue', 'layouts/**/*.vue'],
+      rules: {
+        'vue/multi-word-component-names': 0,
+      },
+    },
+  ],
 }
