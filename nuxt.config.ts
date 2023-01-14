@@ -1,3 +1,5 @@
+import { defineNuxtConfig } from 'nuxt/config'
+
 export default defineNuxtConfig({
   app: {
     head: {
@@ -21,7 +23,7 @@ export default defineNuxtConfig({
     icons: true,
     attributify: true,
     webFonts: {
-      provider: 'google', // default provider
+      provider: 'google',
       fonts: {
         sans: 'Inter',
       },
