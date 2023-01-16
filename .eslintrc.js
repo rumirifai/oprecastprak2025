@@ -21,6 +21,7 @@ module.exports = {
   plugins: ['@typescript-eslint'],
 
   rules: {
+    'vue/multi-word-component-names': 'off',
     'vue/script-setup-no-uses-vars': 'off',
     'prettier/prettier': [
       'error',
@@ -29,13 +30,4 @@ module.exports = {
       },
     ],
   },
-
-  overrides: [
-    {
-      files: ['pages/**/*.vue', 'layouts/**/*.vue'],
-      rules: {
-        'vue/multi-word-component-names': 0,
-      },
-    },
-  ],
 }
