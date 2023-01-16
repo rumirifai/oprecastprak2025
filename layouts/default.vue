@@ -40,7 +40,7 @@
       </div>
     </div>
     <div
-      class="absolute inset-0 max-h-screen overflow-y-scroll max-w-screen"
+      class="absolute inset-0 max-h-screen overflow-y-scroll max-w-screen scroll-smooth"
       xl="overflow-hidden"
     >
       <slot />
