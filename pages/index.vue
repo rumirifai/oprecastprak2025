@@ -172,7 +172,7 @@ const members = [
           <p text="xl:2xl xl" class="leading-loose mt-4">
             Register now to be a part of our big family. <br />
             Gain all the benefits and valuable experience in your life! <br />
-            - Laboratory Assistant 2021
+            - Laboratory Assistant 2023
           </p>
           <NuxtLink to="/requirements">
             <button

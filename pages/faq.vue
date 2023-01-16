@@ -45,7 +45,7 @@ const contacts = [
 
 <template>
   <main class="absolute inset-0">
-    <div class="max-h-screen bg-[#2b2526]" flex="~ col">
+    <div class="h-screen bg-[#2b2526]" flex="~ col">
       <div
         class="h-fit justify-center p-12 xl:p-24 grow"
         flex="~ col"

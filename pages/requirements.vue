@@ -76,12 +76,12 @@ const contacts = [
         class="w-full grow mt-8"
         flex="~ col xl:row"
         style="
-          background-image: url('/bg/home-2-wide.png');
+          background-image: var(--bg-image);
           background-repeat: no-repeat;
           background-size: cover;
         "
       >
-        <div class="justify-center w-full px-8" xl="w-40% px-16" flex="~ col">
+        <div class="justify-center w-full p-12" xl="w-40% p-16" flex="~ col">
           <NuxtLink class="mb-4" to="/">
             <div class="i-ph:arrow-left" text="white 2rem"></div>
           </NuxtLink>
@@ -93,7 +93,7 @@ const contacts = [
             Requirements</span
           >
           <span text="1rem white">
-            Want to take part in Lab Assistant 2021 selection? <br />There are
+            Want to take part in Lab Assistant 2023 selection? <br />There are
             some things that you must prepare beforehand. <br />
             See the timeline for more information.
           </span>
@@ -124,10 +124,10 @@ const contacts = [
           </div>
         </div>
         <div
-          class="w-full relative px-8"
-          xl="w-60% overflow-y-scroll max-h-[calc(100vh-6rem)] px-16"
+          class="w-full relative p-12"
+          xl="w-60% overflow-y-scroll max-h-[calc(100vh-6rem)] p-16"
         >
-          <div class="border-l-2 mt-10">
+          <div class="border-l-2">
             <TimelineCard
               v-for="(event, i) in events"
               :key="i"
@@ -140,3 +140,15 @@ const contacts = [
     </div>
   </main>
 </template>
+
+<style scoped>
+main {
+  --bg-image: url('/bg/timeline-narrow.png');
+}
+
+@media (min-width: 1280px) {
+  main {
+    --bg-image: url('/bg/timeline-wide.png');
+  }
+}
+</style>
