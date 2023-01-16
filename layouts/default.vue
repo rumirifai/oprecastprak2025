@@ -17,30 +17,30 @@
       </button>
       <div class="flex flex-col h-full pt-16">
         <NuxtLink
-          class="w-full flex items-start text-white text-2xl py-4 cursor-pointer"
+          class="flex items-start w-full py-4 text-2xl text-white cursor-pointer"
           to="/"
           @click="toggleSidebar()"
         >
-          <div class="i-ph:house mx-auto"></div>
+          <div class="mx-auto i-ph:house"></div>
         </NuxtLink>
         <NuxtLink
-          class="w-full flex items-start text-white text-2xl py-4 cursor-pointer"
+          class="flex items-start w-full py-4 text-2xl text-white cursor-pointer"
           to="/requirements"
           @click="toggleSidebar()"
         >
-          <div class="i-ph:pencil mx-auto"></div>
+          <div class="mx-auto i-ph:pencil"></div>
         </NuxtLink>
         <NuxtLink
-          class="w-full flex items-start text-white text-2xl py-4 cursor-pointer"
+          class="flex items-start w-full py-4 text-2xl text-white cursor-pointer"
           to="/faq"
           @click="toggleSidebar()"
         >
-          <div class="i-ph:question mx-auto"></div>
+          <div class="mx-auto i-ph:question"></div>
         </NuxtLink>
       </div>
     </div>
     <div
-      class="max-w-screen max-h-screen overflow-y-scroll absolute inset-0"
+      class="absolute inset-0 max-h-screen overflow-y-scroll max-w-screen"
       xl="overflow-hidden"
     >
       <slot />

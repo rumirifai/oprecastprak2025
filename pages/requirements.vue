@@ -73,7 +73,7 @@ const contacts = [
   <main class="overflow-x-hidden">
     <div class="w-screen bg-[#2b2526] h-fit" xl="h-screen" flex="~ col wrap">
       <div
-        class="w-full grow mt-8"
+        class="w-full mt-8 grow"
         flex="~ col xl:row"
         bg="[url(/bg/timeline-narrow.png)] cover xl:[url(/bg/timeline-wide.png)]"
       >
@@ -91,7 +91,7 @@ const contacts = [
             See the timeline for more information.
           </span>
 
-          <div class="mt-12 mb-4 w-full border border-white"></div>
+          <div class="w-full mt-12 mb-4 border border-white"></div>
 
           <div class="flex flex-col">
             <span class="text-[#fdca32] text-lg font-bold"
@@ -110,14 +110,14 @@ const contacts = [
               </NuxtLink>
               page first <br />or drop your questions to :<br />
             </span>
-            <ul class="list-disc text-white mt-1 ml-6">
+            <ul class="mt-1 ml-6 text-white list-disc">
               <li>{{ contacts[0] }}</li>
               <li>{{ contacts[1] }}</li>
             </ul>
           </div>
         </div>
         <div
-          class="w-full relative p-12"
+          class="relative w-full p-12"
           xl="w-60% overflow-y-scroll max-h-[calc(100vh-6rem)] p-16"
         >
           <div class="border-l-2">

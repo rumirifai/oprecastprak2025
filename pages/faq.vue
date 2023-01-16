@@ -47,7 +47,7 @@ const contacts = [
   <main>
     <div class="h-screen bg-[#2b2526]" flex="~ col">
       <div
-        class="h-fit justify-center p-12 xl:p-24 grow"
+        class="justify-center p-12 h-fit xl:p-24 grow"
         flex="~ col"
         xl="h-full"
         style="
@@ -59,7 +59,7 @@ const contacts = [
         <span text="2rem md:4rem [#fdca32]" font="sans bold"
           >Frequently Asked Questions</span
         >
-        <div class="mt-4 flex flex-col divide-y divide-gray-700 text-white">
+        <div class="flex flex-col mt-4 text-white divide-y divide-gray-700">
           <FAQCard v-for="(faq, i) in faqs" :key="i" :faq="faq" />
         </div>
         <div class="flex flex-col mt-4">
@@ -67,7 +67,7 @@ const contacts = [
             >Further Questions?</span
           >
           <span text="base white"> Drop your questions to : </span>
-          <ul class="list-disc text-white mt-1 ml-6">
+          <ul class="mt-1 ml-6 text-white list-disc">
             <li>{{ contacts[0] }}</li>
             <li>{{ contacts[1] }}</li>
           </ul>

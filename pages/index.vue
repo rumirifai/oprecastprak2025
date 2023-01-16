@@ -58,16 +58,16 @@ const members = [
       <div class="w-full h-full">
         <div
           id="banner"
-          class="h-screen justify-center xl:mx-16 mx-8 leading-tight xl:leading-relaxed"
+          class="justify-center h-screen mx-8 leading-tight xl:mx-16 xl:leading-relaxed"
           flex="~ col"
           text="xl:6xl 3xl center"
           font="extrabold"
         >
           <span class="text-[#fdca32]">Open Recruitment</span>
           <span>Asisten Praktikum <span>2023</span></span>
-          <div class="mt-16 w-full justify-center" flex="~">
+          <div class="justify-center w-full mt-16" flex="~">
             <button
-              class="rounded-full block"
+              class="block rounded-full"
               border="none"
               @click="scrollTo('details')"
             >
@@ -96,7 +96,7 @@ const members = [
             <h3 text="4xl" font="bold">
               <span text="[#fdca32]">What</span> you do
             </h3>
-            <ul class="mt-8 list-disc ml-8" text="lg" font="light">
+            <ul class="mt-8 ml-8 list-disc" text="lg" font="light">
               <li>as facilitator, share your knowledge</li>
               <li>delivering the subject to students</li>
               <li>create, conduct, and examine assignments</li>
@@ -107,7 +107,7 @@ const members = [
             <h3 text="4xl" font="bold">
               <span text="[#fdca32]">Why</span> joining
             </h3>
-            <ul class="mt-8 list-disc ml-8" text="lg" font="light">
+            <ul class="mt-8 ml-8 list-disc" text="lg" font="light">
               <li>gain valuable experience</li>
               <li>further develop and refine your skills</li>
               <li>gain confidence</li>
@@ -132,7 +132,7 @@ const members = [
             <span
               v-for="(course, i) in courses"
               :key="i"
-              class="bg-gray-300 px-4 py-2 mr-4 mt-4 h-fit rounded-full block cursor-pointer"
+              class="block px-4 py-2 mt-4 mr-4 bg-gray-300 rounded-full cursor-pointer min-w-fit h-fit shrink-0"
               text="black xl:lg base center"
               >{{ course }}</span
             >
@@ -143,7 +143,7 @@ const members = [
     <!-- our family section -->
     <section
       id="our-family"
-      class="items-start w-full h-screen snap-start pt-12"
+      class="items-start w-full h-screen pt-12 snap-start"
       flex="~ col"
       bg="[url(/bg/home-narrow.png)] cover xl:[url(/bg/home-wide.png)]"
     >
@@ -152,31 +152,31 @@ const members = [
         class="maxmax-h-[calc(100vh-6rem)] h-fit xl:items-center justify-center"
       >
         <div
-          class="w-screen flex flex-nowrap p-6 overflow-scroll"
+          class="flex w-screen p-6 overflow-scroll flex-nowrap"
           xl="w-40% ml-24 flex-wrap overflow-hidden max-h-80%"
         >
           <nuxt-img
             v-for="(member, i) in members"
             :key="i"
-            class="h-24 w-24 rounded-full mr-4 mt-4"
+            class="w-24 h-24 mt-4 mr-4 rounded-full"
             fit="contain"
             :src="`/images/${member}.webp`"
           />
         </div>
         <div
-          class="w-fit p-4 justify-center ml-6"
+          class="justify-center p-4 ml-6 w-fit"
           flex="~ col"
           xl="w-40% ml-24"
         >
           <span text="xl:7xl 5xl [#fdca32]" font="bold">Our Family</span>
-          <p text="xl:2xl xl" class="leading-loose mt-4">
+          <p text="xl:2xl xl" class="mt-4 leading-loose">
             Register now to be a part of our big family. <br />
             Gain all the benefits and valuable experience in your life! <br />
             - Laboratory Assistant 2023
           </p>
           <NuxtLink to="/requirements">
             <button
-              class="w-fit px-4 py-2 rounded-lg xl:mt-12 mt-6"
+              class="px-4 py-2 mt-6 rounded-lg w-fit xl:mt-12"
               border="~ solid 2px"
               text="white xl xl:2xl"
               font="bold"
