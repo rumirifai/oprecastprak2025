@@ -70,7 +70,7 @@ const contacts = [
 </script>
 
 <template>
-  <main class="absolute inset-0">
+  <main>
     <div class="w-screen bg-[#2b2526] h-fit" xl="h-screen" flex="~ col wrap">
       <div
         class="w-full grow mt-8"
@@ -81,10 +81,7 @@ const contacts = [
           background-size: cover;
         "
       >
-        <div class="justify-center w-full p-12" xl="w-40% p-16" flex="~ col">
-          <NuxtLink class="mb-4" to="/">
-            <div class="i-ph:arrow-left" text="white 2rem"></div>
-          </NuxtLink>
+        <div class="justify-center w-full p-12" xl="w-40% p-20" flex="~ col">
           <span
             class="leading-tight"
             text="2rem lg:4rem [#fdca32]"

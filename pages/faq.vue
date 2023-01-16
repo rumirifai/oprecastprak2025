@@ -44,7 +44,7 @@ const contacts = [
 </script>
 
 <template>
-  <main class="absolute inset-0">
+  <main>
     <div class="h-screen bg-[#2b2526]" flex="~ col">
       <div
         class="h-fit justify-center p-12 xl:p-24 grow"
@@ -56,9 +56,6 @@ const contacts = [
           background-size: cover;
         "
       >
-        <NuxtLink to="/requirements">
-          <div class="i-ph:arrow-left" text="white 2rem"></div>
-        </NuxtLink>
         <span text="2rem md:4rem [#fdca32]" font="sans bold"
           >Frequently Asked Questions</span
         >

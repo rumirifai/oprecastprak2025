@@ -35,6 +35,9 @@ export default defineNuxtConfig({
       'i-ph:laptop',
       'i-ph:user',
       'i-ph:speaker-high',
+      'i-ph:x',
+      'i-ph:list',
+      'blur-sm',
     ],
   },
   image: {
