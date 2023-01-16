@@ -3,7 +3,7 @@ interface TimelineEvent {
   title: string
   date?: string
   description?: string
-  links?: string[]
+  links?: TimelineLink[]
   steps: string[]
   additionalSteps?: string[]
 }

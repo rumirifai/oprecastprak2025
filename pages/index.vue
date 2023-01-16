@@ -88,7 +88,8 @@ const members = [
     >
       <div class="w-full h-full px-8" flex="~ col md:row" xl="px-16">
         <div
-          class="w-full p-8 h-screen snap-start bg-[url(/bg/home-alt-narrow.png)] bg-cover md:bg-none"
+          class="w-full p-8 h-screen snap-start bg-[url(/bg/home-alt-narrow.png)] bg-cover md:bg-none justify-center"
+          flex="~ col"
           xl="w-40% p-16 snap-none"
         >
           <div class="mt-8">
@@ -115,7 +116,8 @@ const members = [
           </div>
         </div>
         <div
-          class="w-full p-8 snap-start h-screen bg-[url(/bg/home-alt-narrow.png)] bg-cover md:bg-none"
+          class="w-full p-8 snap-start h-screen bg-[url(/bg/home-alt-narrow.png)] bg-cover md:bg-none justify-center"
+          flex="~ col"
           xl="w-60% p-16 snap-none"
         >
           <h3 class="mt-4 leading-tight" text="5xl white" font="bold">
@@ -128,8 +130,8 @@ const members = [
             flex="~ row wrap"
           >
             <span
-              v-for="course in courses"
-              :key="course"
+              v-for="(course, i) in courses"
+              :key="i"
               class="bg-gray-300 px-4 py-2 mr-4 mt-4 h-fit rounded-full block cursor-pointer"
               text="black xl:lg base center"
               >{{ course }}</span
@@ -147,15 +149,15 @@ const members = [
     >
       <div
         flex="~ xl:row col grow"
-        class="maxmax-h-[calc(100vh-6rem)] h-fit xl:items-center"
+        class="maxmax-h-[calc(100vh-6rem)] h-fit xl:items-center justify-center"
       >
         <div
           class="w-screen flex flex-nowrap p-6 overflow-scroll"
           xl="w-40% ml-24 flex-wrap overflow-hidden max-h-80%"
         >
           <nuxt-img
-            v-for="member in members"
-            :key="member"
+            v-for="(member, i) in members"
+            :key="i"
             class="h-24 w-24 rounded-full mr-4 mt-4"
             fit="contain"
             :src="`/images/${member}.webp`"

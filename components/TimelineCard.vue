@@ -40,27 +40,18 @@ const props = defineProps<{
       <div
         v-if="props.event.links"
         class="mt-4 gap-4"
-        flex="~ col lg:row justify-center"
+        flex="~ col lg:row justify-center wrap"
       >
         <a
-          v-if="props.event.links[0]"
-          :href="props.event.links[0]"
+          v-for="(link, k) in props.event.links"
+          :key="k"
+          :href="link.url"
           target="_blank"
           border="~ white solid 2px"
           class="w-fit p-3 rounded-lg text-center text-white"
           hover="text-gray-800 bg-white"
         >
-          Download Questions
-        </a>
-        <a
-          v-if="props.event.links[1]"
-          :href="props.event.links[1]"
-          target="_blank"
-          border="~ white solid 2px"
-          class="w-fit p-3 rounded-lg text-center text-white"
-          hover="text-gray-800 bg-white"
-        >
-          Upload Answer
+          {{ link.title }}
         </a>
       </div>
     </div>
