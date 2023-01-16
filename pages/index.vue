@@ -5,7 +5,7 @@ useHead({
 
 function scrollTo(id: string) {
   const element = document.getElementById(id)
-  element?.scrollIntoView({ behavior: 'auto' })
+  element?.scrollIntoView({ behavior: 'smooth' })
 }
 
 const courses = [
