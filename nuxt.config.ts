@@ -37,4 +37,7 @@ export default defineNuxtConfig({
       'i-ph:speaker-high',
     ],
   },
+  image: {
+    provider: 'ipx',
+  },
 })
