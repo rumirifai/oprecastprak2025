@@ -47,17 +47,13 @@ const members = [
 
 <template>
   <main
-    class="max-h-screen overflow-y-scroll snap-y snap-mandatory bg-[#2b2526] text-white font-sans"
+    class="max-h-screen overflow-x-hidden overflow-y-scroll snap-y snap-mandatory bg-[#2b2526] text-white font-sans"
   >
     <!-- hero section -->
     <section
       id="hero"
       class="flex justify-center w-full h-screen snap-start"
-      style="
-        background-image: var(--bg-image);
-        background-repeat: no-repeat;
-        background-size: cover;
-      "
+      bg="[url(/bg/home-narrow.png)] cover xl:[url(/bg/home-wide.png)]"
     >
       <div class="w-full h-full">
         <div
@@ -87,11 +83,14 @@ const members = [
     <!-- detail section -->
     <section
       id="details"
-      class="flex flex-col items-center justify-center"
-      xl="w-full h-screen snap-start"
+      class="flex flex-col items-center justify-center bg-none md:bg-[url(/bg/home-alt-wide.png)] bg-cover"
+      xl="w-full h-screen snap-start "
     >
       <div class="w-full h-full px-8" flex="~ col md:row" xl="px-16">
-        <div class="w-full p-8 h-screen snap-start" xl="w-40% p-16 snap-none">
+        <div
+          class="w-full p-8 h-screen snap-start bg-[url(/bg/home-alt-narrow.png)] bg-cover md:bg-none"
+          xl="w-40% p-16 snap-none"
+        >
           <div class="mt-8">
             <h3 text="4xl" font="bold">
               <span text="[#fdca32]">What</span> you do
@@ -115,13 +114,16 @@ const members = [
             </ul>
           </div>
         </div>
-        <div class="w-full p-8 snap-start h-screen" xl="w-60% p-16 snap-none">
+        <div
+          class="w-full p-8 snap-start h-screen bg-[url(/bg/home-alt-narrow.png)] bg-cover md:bg-none"
+          xl="w-60% p-16 snap-none"
+        >
           <h3 class="mt-4 leading-tight" text="5xl white" font="bold">
             Available
             <span class="text-[#fdca32]">Courses</span>
           </h3>
           <div
-            class="mt-8 h-60% overflow-scroll"
+            class="mt-8 h-60% overflow-auto"
             xl="mt-16 h-fit overflow-hidden"
             flex="~ row wrap"
           >
@@ -141,15 +143,11 @@ const members = [
       id="our-family"
       class="items-start w-full h-screen snap-start pt-12"
       flex="~ col"
-      style="
-        background-image: var(--bg-image);
-        background-repeat: no-repeat;
-        background-size: cover;
-      "
+      bg="[url(/bg/home-narrow.png)] cover xl:[url(/bg/home-wide.png)]"
     >
       <div
         flex="~ xl:row col grow"
-        class="max-h-[calc(100vh-6rem)] h-fit xl:items-center"
+        class="maxmax-h-[calc(100vh-6rem)] h-fit xl:items-center"
       >
         <div
           class="w-screen flex flex-nowrap p-6 overflow-scroll"
@@ -190,15 +188,3 @@ const members = [
     </section>
   </main>
 </template>
-
-<style scoped>
-main {
-  --bg-image: url('/bg/home-narrow.png');
-}
-
-@media (min-width: 1024px) {
-  main {
-    --bg-image: url('/bg/home-wide.png');
-  }
-}
-</style>

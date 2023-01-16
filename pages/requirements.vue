@@ -70,16 +70,12 @@ const contacts = [
 </script>
 
 <template>
-  <main>
+  <main class="overflow-x-hidden">
     <div class="w-screen bg-[#2b2526] h-fit" xl="h-screen" flex="~ col wrap">
       <div
         class="w-full grow mt-8"
         flex="~ col xl:row"
-        style="
-          background-image: var(--bg-image);
-          background-repeat: no-repeat;
-          background-size: cover;
-        "
+        bg="[url(/bg/timeline-narrow.png)] cover xl:[url(/bg/timeline-wide.png)]"
       >
         <div class="justify-center w-full p-12" xl="w-40% p-20" flex="~ col">
           <span
