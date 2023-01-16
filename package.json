@@ -38,5 +38,8 @@
     "**/*.{js,ts,vue,html,css}": [
       "pnpm run lintfix"
     ]
+  },
+  "dependencies": {
+    "ipx": "1.0.0-2"
   }
 }

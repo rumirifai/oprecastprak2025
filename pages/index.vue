@@ -136,17 +136,16 @@ const members = [
     >
       <div
         flex="~ xl:row col grow"
-        class="max-h-[calc(100vh-6rem)] items-center h-fit"
+        class="max-h-[calc(100vh-6rem)] h-fit xl:items-center"
       >
         <div
-          class="w-fit flex flex-nowrap p-8 overflow-scroll"
+          class="w-screen flex flex-nowrap p-6 overflow-scroll"
           xl="w-40% ml-24 flex-wrap overflow-hidden max-h-80%"
         >
           <nuxt-img
             v-for="member in members"
             :key="member"
             class="h-24 w-24 rounded-full mr-4 mt-4"
-            xl="h-28 w-28 "
             fit="contain"
             :src="`/images/${member}.webp`"
           />
