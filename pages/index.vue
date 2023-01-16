@@ -47,27 +47,21 @@ const members = [
 
 <template>
   <main
-    class="max-h-screen overflow-y-scroll snap-y snap-mandatory bg-gray-800 text-white font-sans"
+    class="max-h-screen overflow-y-scroll snap-y snap-mandatory bg-[#2b2526] text-white font-sans"
   >
     <!-- hero section -->
-    <section
-      id="hero"
-      class="flex justify-center w-full h-screen snap-start bg-gradient-radial from-gray-600 to-gray-800"
-    >
+    <section id="hero" class="flex justify-center w-full h-screen snap-start">
       <div class="w-full h-full">
         <div
           id="banner"
-          class="h-screen justify-center lg:mx-16 mx-8"
+          class="h-screen justify-center xl:mx-16 mx-8 leading-relaxed"
           flex="~ col"
-          text="lg:6rem lg:4rem 2rem center"
+          text="6xl center"
           font="extrabold"
         >
-          <span text="teal-400">Open Recruitment</span>
+          <span>Open Recruitment</span>
           <span>Asisten Praktikum <span>2023</span></span>
-          <div
-            class="mt-16 w-full justify-center lg:visible invisible"
-            flex="~"
-          >
+          <div class="mt-16 w-full justify-center" flex="~">
             <button
               class="rounded-full block"
               border="none"
@@ -85,27 +79,27 @@ const members = [
     <!-- detail section -->
     <section
       id="details"
-      class="flex flex-col items-center justify-center bg-gray-800"
-      lg="w-full h-screen snap-start"
+      class="flex flex-col items-center justify-center"
+      xl="w-full h-screen snap-start"
     >
-      <div class="w-full h-full px-8" flex="~ col lg:row" lg="px-16">
-        <div class="w-full p-8 h-screen snap-start" lg="w-40% p-16 snap-none">
+      <div class="w-full h-full px-8" flex="~ col xl:row" xl="px-16">
+        <div class="w-full p-8 h-screen snap-start" xl="w-40% p-16 snap-none">
           <div class="mt-8">
-            <h3 text="1.5rem lg:3rem" font="bold">
-              <span text="teal-300">What</span> you do
+            <h3 text="3rem" font="bold">
+              <span text="[#fdca32]">What</span> you do
             </h3>
-            <ul class="mt-8 list-disc ml-8" text="1rem lg:1.5rem" font="light">
+            <ul class="mt-8 list-disc ml-8" text="lg" font="light">
               <li>as facilitator, share your knowledge</li>
               <li>delivering the subject to students</li>
               <li>create, conduct, and examine assignments</li>
               <li>responsible for laboratory maintenance</li>
             </ul>
           </div>
-          <div class="mt-16" lg="mt-24">
-            <h3 text="1.5rem lg:3rem white" font="bold">
-              <span text="teal-300">Why</span> joining
+          <div class="mt-16" xl="mt-24">
+            <h3 text="3rem white" font="bold">
+              <span text="[#fdca32]">Why</span> joining
             </h3>
-            <ul class="mt-8 list-disc ml-8" text="1rem lg:1.5rem" font="light">
+            <ul class="mt-8 list-disc ml-8" text="lg" font="light">
               <li>gain valuable experience</li>
               <li>further develop and refine your skills</li>
               <li>gain confidence</li>
@@ -113,24 +107,21 @@ const members = [
             </ul>
           </div>
         </div>
-        <div
-          class="w-full p-8 snap-start h-screen bg-gray-700"
-          lg="w-60% p-16 snap-none"
-        >
-          <h3 class="mt-4" text="1.5rem lg:4rem white" font="bold">
+        <div class="w-full p-8 snap-start h-screen" xl="w-60% p-16 snap-none">
+          <h3 class="mt-4 leading-tight" text="4rem white" font="bold">
             Available
-            <span class="bg-white text-gray-700 px-2 rounded-lg">Courses</span>
+            <span class="text-[#fdca32]">Courses</span>
           </h3>
           <div
             class="mt-8 h-60% overflow-scroll"
-            lg="mt-16 h-fit overflow-hidden"
+            xl="mt-16 h-fit overflow-hidden"
             flex="~ row wrap"
           >
             <span
               v-for="course in courses"
               :key="course"
               class="bg-gray-300 px-4 py-2 mr-4 mt-4 h-fit rounded-full block cursor-pointer"
-              text="black lg:lg base center"
+              text="black xl:lg base center"
               >{{ course }}</span
             >
           </div>
@@ -140,19 +131,22 @@ const members = [
     <!-- our family section -->
     <section
       id="our-family"
-      class="items-start w-full h-screen snap-start bg-gray-800 pt-12 lg:pt-24"
+      class="items-start w-full h-screen snap-start pt-12"
       flex="~ col"
     >
-      <div flex="~ lg:row col grow" class="max-h-[calc(100vh-6rem)]">
+      <div
+        flex="~ xl:row col grow"
+        class="max-h-[calc(100vh-6rem)] items-center h-fit"
+      >
         <div
           class="w-fit flex flex-nowrap p-8 overflow-scroll"
-          lg="w-40% ml-24 flex-wrap overflow-hidden"
+          xl="w-40% ml-24 flex-wrap overflow-hidden max-h-80%"
         >
           <nuxt-img
             v-for="member in members"
             :key="member"
             class="h-24 w-24 rounded-full mr-4 mt-4"
-            lg="h-32 w-32"
+            xl="h-28 w-28 "
             fit="contain"
             :src="`/images/${member}.webp`"
           />
@@ -160,19 +154,19 @@ const members = [
         <div
           class="w-fit p-4 justify-center ml-6"
           flex="~ col"
-          lg="w-40% ml-24"
+          xl="w-40% ml-24"
         >
-          <span text="2rem lg:4rem white" font="bold">Our Family</span>
-          <p text="1rem lg:1.5rem white" class="leading-loose">
+          <span text="xl:7xl 5xl [#fdca32]" font="bold">Our Family</span>
+          <p text="xl:2xl xl" class="leading-loose mt-4">
             Register now to be a part of our big family. <br />
             Gain all the benefits and valuable experience in your life! <br />
             - Laboratory Assistant 2021
           </p>
           <NuxtLink to="/requirements">
             <button
-              class="w-fit px-4 py-2 rounded-lg lg:mt-12 mt-6"
+              class="w-fit px-4 py-2 rounded-lg xl:mt-12 mt-6"
               border="~ solid 2px"
-              text="white lg:2rem 1rem"
+              text="white xl xl:2xl"
               font="bold"
             >
               Register now

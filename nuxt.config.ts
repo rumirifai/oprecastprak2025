@@ -28,5 +28,13 @@ export default defineNuxtConfig({
         sans: 'Inter',
       },
     },
+
+    safelist: [
+      'i-ph:files',
+      'i-ph:newspaper-clipping',
+      'i-ph:laptop',
+      'i-ph:user',
+      'i-ph:speaker-high',
+    ],
   },
 })
