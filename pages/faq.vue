@@ -44,26 +44,51 @@ const contacts = [
 </script>
 
 <template>
-  <main class="h-screen bg-[#2b2526]" flex="~ col">
-    <div class="h-full justify-center px-12 xl:px-24 grow" flex="~ col">
-      <NuxtLink to="/requirements">
-        <div class="i-ph:arrow-left" text="white 2rem"></div>
-      </NuxtLink>
-      <span text="2rem md:4rem [#fdca32]" font="sans bold"
-        >Frequently Asked Questions</span
+  <main class="absolute inset-0">
+    <div class="max-h-screen bg-[#2b2526]" flex="~ col">
+      <div
+        class="h-fit justify-center p-12 xl:p-24 grow"
+        flex="~ col"
+        xl="h-full"
+        style="
+          background-image: var(--bg-image);
+          background-repeat: no-repeat;
+          background-size: cover;
+        "
       >
-      <div class="mt-4 flex flex-col divide-y divide-gray-700 text-white">
-        <FAQCard v-for="(faq, i) in faqs" :key="i" :faq="faq" />
+        <NuxtLink to="/requirements">
+          <div class="i-ph:arrow-left" text="white 2rem"></div>
+        </NuxtLink>
+        <span text="2rem md:4rem [#fdca32]" font="sans bold"
+          >Frequently Asked Questions</span
+        >
+        <div class="mt-4 flex flex-col divide-y divide-gray-700 text-white">
+          <FAQCard v-for="(faq, i) in faqs" :key="i" :faq="faq" />
+        </div>
+        <div class="flex flex-col mt-4">
+          <span class="text-[#fdca32] text-lg font-bold"
+            >Further Questions?</span
+          >
+          <span text="base white"> Drop your questions to : </span>
+          <ul class="list-disc text-white mt-1 ml-6">
+            <li>{{ contacts[0] }}</li>
+            <li>{{ contacts[1] }}</li>
+          </ul>
+        </div>
       </div>
-      <div class="flex flex-col mt-4">
-        <span class="text-[#fdca32] text-lg font-bold">Further Questions?</span>
-        <span text="base white"> Drop your questions to : </span>
-        <ul class="list-disc text-white mt-1 ml-6">
-          <li>{{ contacts[0] }}</li>
-          <li>{{ contacts[1] }}</li>
-        </ul>
-      </div>
+      <Footer />
     </div>
-    <Footer />
   </main>
 </template>
+
+<style scoped>
+main {
+  --bg-image: url('/bg/faq-narrow.png');
+}
+
+@media (min-width: 1024px) {
+  main {
+    --bg-image: url('/bg/faq-wide.png');
+  }
+}
+</style>

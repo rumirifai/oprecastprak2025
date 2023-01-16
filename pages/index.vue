@@ -50,16 +50,24 @@ const members = [
     class="max-h-screen overflow-y-scroll snap-y snap-mandatory bg-[#2b2526] text-white font-sans"
   >
     <!-- hero section -->
-    <section id="hero" class="flex justify-center w-full h-screen snap-start">
+    <section
+      id="hero"
+      class="flex justify-center w-full h-screen snap-start"
+      style="
+        background-image: var(--bg-image);
+        background-repeat: no-repeat;
+        background-size: cover;
+      "
+    >
       <div class="w-full h-full">
         <div
           id="banner"
-          class="h-screen justify-center xl:mx-16 mx-8 leading-relaxed"
+          class="h-screen justify-center xl:mx-16 mx-8 leading-tight xl:leading-relaxed"
           flex="~ col"
-          text="6xl center"
+          text="xl:6xl 3xl center"
           font="extrabold"
         >
-          <span>Open Recruitment</span>
+          <span class="text-[#fdca32]">Open Recruitment</span>
           <span>Asisten Praktikum <span>2023</span></span>
           <div class="mt-16 w-full justify-center" flex="~">
             <button
@@ -82,10 +90,10 @@ const members = [
       class="flex flex-col items-center justify-center"
       xl="w-full h-screen snap-start"
     >
-      <div class="w-full h-full px-8" flex="~ col xl:row" xl="px-16">
+      <div class="w-full h-full px-8" flex="~ col md:row" xl="px-16">
         <div class="w-full p-8 h-screen snap-start" xl="w-40% p-16 snap-none">
           <div class="mt-8">
-            <h3 text="3rem" font="bold">
+            <h3 text="4xl" font="bold">
               <span text="[#fdca32]">What</span> you do
             </h3>
             <ul class="mt-8 list-disc ml-8" text="lg" font="light">
@@ -95,8 +103,8 @@ const members = [
               <li>responsible for laboratory maintenance</li>
             </ul>
           </div>
-          <div class="mt-16" xl="mt-24">
-            <h3 text="3rem white" font="bold">
+          <div class="mt-8" xl="mt-24">
+            <h3 text="4xl" font="bold">
               <span text="[#fdca32]">Why</span> joining
             </h3>
             <ul class="mt-8 list-disc ml-8" text="lg" font="light">
@@ -108,7 +116,7 @@ const members = [
           </div>
         </div>
         <div class="w-full p-8 snap-start h-screen" xl="w-60% p-16 snap-none">
-          <h3 class="mt-4 leading-tight" text="4rem white" font="bold">
+          <h3 class="mt-4 leading-tight" text="5xl white" font="bold">
             Available
             <span class="text-[#fdca32]">Courses</span>
           </h3>
@@ -133,6 +141,11 @@ const members = [
       id="our-family"
       class="items-start w-full h-screen snap-start pt-12"
       flex="~ col"
+      style="
+        background-image: var(--bg-image);
+        background-repeat: no-repeat;
+        background-size: cover;
+      "
     >
       <div
         flex="~ xl:row col grow"
@@ -177,3 +190,15 @@ const members = [
     </section>
   </main>
 </template>
+
+<style scoped>
+main {
+  --bg-image: url('/bg/home-narrow.png');
+}
+
+@media (min-width: 1024px) {
+  main {
+    --bg-image: url('/bg/home-wide.png');
+  }
+}
+</style>

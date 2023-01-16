@@ -72,7 +72,15 @@ const contacts = [
 <template>
   <main class="absolute inset-0">
     <div class="w-screen bg-[#2b2526] h-fit" xl="h-screen" flex="~ col wrap">
-      <div class="w-full grow mt-8" flex="~ col xl:row">
+      <div
+        class="w-full grow mt-8"
+        flex="~ col xl:row"
+        style="
+          background-image: url('/bg/home-2-wide.png');
+          background-repeat: no-repeat;
+          background-size: cover;
+        "
+      >
         <div class="justify-center w-full px-8" xl="w-40% px-16" flex="~ col">
           <NuxtLink class="mb-4" to="/">
             <div class="i-ph:arrow-left" text="white 2rem"></div>
@@ -116,8 +124,8 @@ const contacts = [
           </div>
         </div>
         <div
-          class="w-full scrollbar-hide relative px-8"
-          xl="w-60% overflow-scroll max-h-[calc(100vh-6rem)] px-16"
+          class="w-full relative px-8"
+          xl="w-60% overflow-y-scroll max-h-[calc(100vh-6rem)] px-16"
         >
           <div class="border-l-2 mt-10">
             <TimelineCard
@@ -132,16 +140,3 @@ const contacts = [
     </div>
   </main>
 </template>
-
-<style scoped>
-/* For Webkit-based browsers (Chrome, Safari and Opera) */
-.scrollbar-hide::-webkit-scrollbar {
-  display: none;
-}
-
-/* For IE, Edge and Firefox */
-.scrollbar-hide {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
-}
-</style>
