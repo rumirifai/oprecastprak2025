@@ -62,7 +62,10 @@ const contacts = [
         <div class="flex flex-col mt-4 text-white divide-y divide-gray-700">
           <FAQCard v-for="(faq, i) in faqs" :key="i" :faq="faq" />
         </div>
-        <div class="flex flex-col mt-4">
+
+        <div class="w-full mt-12 mb-4 border border-white"></div>
+
+        <div class="flex flex-col">
           <span class="text-[#fdca32] text-lg font-bold"
             >Further Questions?</span
           >
