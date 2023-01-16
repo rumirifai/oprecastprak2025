@@ -8,7 +8,7 @@ const events: TimelineEvent[] = [
     icon: 'ph:files',
     title: 'Make sure you fit the requirements.',
     steps: [
-      'Anggota Penuh Himatif FMIPA Unpad and currently in third year (2019) or second year (2020).',
+      'Anggota Penuh Himatif FMIPA Unpad and currently in third year (2020) or second year (2021).',
       'Minimum GPA 3.00.',
       'Have minimum grade B for the subject you wanted.',
     ],
@@ -16,7 +16,7 @@ const events: TimelineEvent[] = [
   {
     icon: 'ph:newspaper-clipping',
     title: 'Registration & Pre-screening Assessment.',
-    date: '20 January 2022 - 26 January 2022',
+    date: '20 January 2023 - 26 January 2023',
     steps: [
       'Register yourself by filling the form.',
       'Upload the requirement files (CV, Cover Letter) in .pdf files.',
@@ -28,14 +28,14 @@ const events: TimelineEvent[] = [
       'Introduce yourself',
       'Tell the reason why you want to be part of us',
       'Make it as creative as possible',
-      'Use hashtag #oprectasprak2022',
+      'Use hashtag #oprectasprak2023',
       'Make sure your Instagram account is not private',
     ],
   },
   {
     icon: 'ph:laptop',
     title: 'Online Assessment.',
-    date: '29 January 2022, starts at 1 PM WIB',
+    date: '29 January 2023, starts at 1 PM WIB',
     steps: [
       'This test is intended to assess the technical skills relevant to the subject(s) you have chosen.',
       'You will be given a chance to answer some questions in 5 hours ( From 01.00 PM to 06.00 PM ).',
@@ -48,14 +48,14 @@ const events: TimelineEvent[] = [
   {
     icon: 'ph:user',
     title: 'On-the-ground Assessment.',
-    date: '2 February 2022 - 4 February 2022',
+    date: '2 February 2023 - 4 February 2023',
     steps: ['Lecture Simulation.', 'Face-to-face Interview.', 'Coding test.'],
     description:
       'This is a follow-up assessment to complete your application process. You will be tested based on your skills and knowledge in programming and communication skills.',
   },
   {
     icon: 'ph:speaker-high',
-    date: '7 February 2022',
+    date: '7 February 2023',
     title: 'Results Announcement.',
     steps: [
       "Selected applicants will be announced on Laboratory Assistant Line Official Account's posts feed.",
@@ -64,19 +64,20 @@ const events: TimelineEvent[] = [
 ]
 
 const contacts = [
-  'Fauzan Azmi Dwicahyo (Line ID : )',
-  'Ariq Hakim Ruswadi (LINE ID : )',
+  'Fauzan Azmi Dwicahyo (Line ID : AncuL001)',
+  'Ariq Hakim Ruswadi (LINE ID : ariqhakim2002)',
 ]
 </script>
 
 <template>
-  <main class="absolute inset-0">
+  <main class="overflow-x-hidden">
     <div class="w-screen bg-[#2b2526] h-fit" xl="h-screen" flex="~ col wrap">
-      <div class="w-full grow mt-8" flex="~ col xl:row">
-        <div class="justify-center w-full px-8" xl="w-40% px-16" flex="~ col">
-          <NuxtLink class="mb-4" to="/">
-            <div class="i-ph:arrow-left" text="white 2rem"></div>
-          </NuxtLink>
+      <div
+        class="w-full mt-8 grow"
+        flex="~ col xl:row"
+        bg="[url(/bg/timeline-narrow.png)] cover xl:[url(/bg/timeline-wide.png)]"
+      >
+        <div class="justify-center w-full p-12" xl="w-40% p-20" flex="~ col">
           <span
             class="leading-tight"
             text="2rem lg:4rem [#fdca32]"
@@ -85,12 +86,12 @@ const contacts = [
             Requirements</span
           >
           <span text="1rem white">
-            Want to take part in Lab Assistant 2021 selection? <br />There are
+            Want to take part in Lab Assistant 2023 selection? <br />There are
             some things that you must prepare beforehand. <br />
             See the timeline for more information.
           </span>
 
-          <div class="mt-12 mb-4 w-full border border-white"></div>
+          <div class="w-full mt-12 mb-4 border border-white"></div>
 
           <div class="flex flex-col">
             <span class="text-[#fdca32] text-lg font-bold"
@@ -109,17 +110,17 @@ const contacts = [
               </NuxtLink>
               page first <br />or drop your questions to :<br />
             </span>
-            <ul class="list-disc text-white mt-1 ml-6">
+            <ul class="mt-1 ml-6 text-white list-disc">
               <li>{{ contacts[0] }}</li>
               <li>{{ contacts[1] }}</li>
             </ul>
           </div>
         </div>
         <div
-          class="w-full scrollbar-hide relative px-8"
-          xl="w-60% overflow-scroll max-h-[calc(100vh-6rem)] px-16"
+          class="relative w-full p-12"
+          xl="w-60% overflow-y-scroll max-h-[calc(100vh-6rem)] p-16"
         >
-          <div class="border-l-2 mt-10">
+          <div class="border-l-2">
             <TimelineCard
               v-for="(event, i) in events"
               :key="i"
@@ -134,14 +135,13 @@ const contacts = [
 </template>
 
 <style scoped>
-/* For Webkit-based browsers (Chrome, Safari and Opera) */
-.scrollbar-hide::-webkit-scrollbar {
-  display: none;
+main {
+  --bg-image: url('/bg/timeline-narrow.png');
 }
 
-/* For IE, Edge and Firefox */
-.scrollbar-hide {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
+@media (min-width: 1280px) {
+  main {
+    --bg-image: url('/bg/timeline-wide.png');
+  }
 }
 </style>

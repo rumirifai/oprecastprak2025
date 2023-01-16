@@ -6,7 +6,7 @@ const props = defineProps<{
 
 <template>
   <details>
-    <summary class="py-2 outline-none cursor-pointer text-lg">
+    <summary class="py-2 text-lg outline-none cursor-pointer">
       {{ props.faq.question }}
     </summary>
     <div class="px-4 pb-4 mt-2">
