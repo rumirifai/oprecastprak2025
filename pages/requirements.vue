@@ -8,7 +8,7 @@ const events: TimelineEvent[] = [
     icon: 'ph:files',
     title: 'Make sure you fit the requirements.',
     steps: [
-      'Anggota Penuh Himatif FMIPA Unpad and currently in third year (2019) or second year (2020).',
+      'Anggota Penuh Himatif FMIPA Unpad and currently in third year (2020) or second year (2021).',
       'Minimum GPA 3.00.',
       'Have minimum grade B for the subject you wanted.',
     ],
@@ -16,7 +16,7 @@ const events: TimelineEvent[] = [
   {
     icon: 'ph:newspaper-clipping',
     title: 'Registration & Pre-screening Assessment.',
-    date: '20 January 2022 - 26 January 2022',
+    date: '20 January 2023 - 26 January 2023',
     steps: [
       'Register yourself by filling the form.',
       'Upload the requirement files (CV, Cover Letter) in .pdf files.',
@@ -28,14 +28,14 @@ const events: TimelineEvent[] = [
       'Introduce yourself',
       'Tell the reason why you want to be part of us',
       'Make it as creative as possible',
-      'Use hashtag #oprectasprak2022',
+      'Use hashtag #oprectasprak2023',
       'Make sure your Instagram account is not private',
     ],
   },
   {
     icon: 'ph:laptop',
     title: 'Online Assessment.',
-    date: '29 January 2022, starts at 1 PM WIB',
+    date: '29 January 2023, starts at 1 PM WIB',
     steps: [
       'This test is intended to assess the technical skills relevant to the subject(s) you have chosen.',
       'You will be given a chance to answer some questions in 5 hours ( From 01.00 PM to 06.00 PM ).',
@@ -48,14 +48,14 @@ const events: TimelineEvent[] = [
   {
     icon: 'ph:user',
     title: 'On-the-ground Assessment.',
-    date: '2 February 2022 - 4 February 2022',
+    date: '2 February 2023 - 4 February 2023',
     steps: ['Lecture Simulation.', 'Face-to-face Interview.', 'Coding test.'],
     description:
       'This is a follow-up assessment to complete your application process. You will be tested based on your skills and knowledge in programming and communication skills.',
   },
   {
     icon: 'ph:speaker-high',
-    date: '7 February 2022',
+    date: '7 February 2023',
     title: 'Results Announcement.',
     steps: [
       "Selected applicants will be announced on Laboratory Assistant Line Official Account's posts feed.",
@@ -64,8 +64,8 @@ const events: TimelineEvent[] = [
 ]
 
 const contacts = [
-  'Fauzan Azmi Dwicahyo (Line ID : )',
-  'Ariq Hakim Ruswadi (LINE ID : )',
+  'Fauzan Azmi Dwicahyo (Line ID : AncuL001)',
+  'Ariq Hakim Ruswadi (LINE ID : ariqhakim2002)',
 ]
 </script>
 

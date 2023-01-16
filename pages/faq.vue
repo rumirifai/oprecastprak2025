@@ -38,8 +38,8 @@ const faqs: FaqItem[] = [
 ]
 
 const contacts = [
-  'Fauzan Azmi Dwicahyo (Line ID : )',
-  'Ariq Hakim Ruswadi (LINE ID : )',
+  'Fauzan Azmi Dwicahyo (Line ID : AncuL001)',
+  'Ariq Hakim Ruswadi (LINE ID : ariqhakim2002)',
 ]
 </script>
 
