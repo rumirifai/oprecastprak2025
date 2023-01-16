@@ -5,21 +5,17 @@ const props = defineProps<{
 </script>
 
 <template>
-  <!-- Card 1 -->
   <div
     class="ml-10 relative flex items-center px-6 py-4 text-white rounded mb-10 flex-col md:flex-row space-y-4 md:space-y-0 border border-white"
   >
-    <!-- Dot Follwing the Left Vertical Line -->
     <div
       class="w-12 h-12 bg-white absolute -left-10 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0 items-center flex"
     >
       <div :class="`i-${props.event.icon} mx-auto text-gray-800 h-8 w-8`"></div>
     </div>
 
-    <!-- Line that connecting the box with the vertical line -->
     <div class="w-10 h-1 bg-gray-200 absolute -left-10 z-0"></div>
 
-    <!-- Content that showing in the box -->
     <div class="flex-auto">
       <h1 class="text-xl text-[#fdca32] font-bold mb-2">
         {{ props.event.title }}

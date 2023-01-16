@@ -134,12 +134,9 @@ const members = [
       class="items-start w-full h-screen snap-start pt-12"
       flex="~ col"
     >
-      <div
-        flex="~ xl:row col grow"
-        class="max-h-[calc(100vh-6rem)] items-center h-fit"
-      >
+      <div flex="~ xl:row col grow" class="max-h-[calc(100vh-6rem)] h-fit">
         <div
-          class="w-fit flex flex-nowrap p-8 overflow-scroll"
+          class="w-screen flex flex-nowrap p-8 overflow-scroll"
           xl="w-40% ml-24 flex-wrap overflow-hidden max-h-80%"
         >
           <nuxt-img
