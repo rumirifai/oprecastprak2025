@@ -42,7 +42,6 @@
     <div
       class="w-screen max-h-screen overflow-y-scroll absolute inset-0"
       xl="overflow-hidden"
-      :class="`${state.isSidebarOpen ? 'blur-sm' : ''}`"
     >
       <slot />
     </div>
@@ -80,7 +79,8 @@ function toggleSidebar() {
 
 <style>
 *::-webkit-scrollbar {
-  width: 12px;
+  width: 6px;
+  height: 6px;
   background-color: #211c1d;
 }
 
@@ -88,5 +88,11 @@ function toggleSidebar() {
   border-radius: 10px;
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   background-color: #f5f5f5;
+}
+
+@media (min-width: 1280px) {
+  *::-webkit-scrollbar {
+    width: 12px;
+  }
 }
 </style>
