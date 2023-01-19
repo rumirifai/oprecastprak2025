@@ -33,7 +33,7 @@ const faqs: FaqItem[] = [
   {
     question: 'Upload jawaban online assessment kemana?',
     answer:
-      'Upload di web ini, nanti akan muncul button upload di halaman timeline recruitment pada tanggal 29 Januari 2022 dimulai pukul 13.00 WIB hingga 18.00 WIB.',
+      'Upload di web ini, nanti akan muncul button upload di halaman timeline recruitment pada tanggal 29 Januari 2023 dimulai pukul 13.00 WIB hingga 18.00 WIB.',
   },
 ]
 
