@@ -91,6 +91,19 @@ const contacts = [
             See the timeline for more information.
           </span>
 
+          <a
+            class="cursor-pointer"
+            href="https://s.id/daftarAsprak2023"
+            target="_blank"
+          >
+            <button
+              class="bg-[#fdca32] text-black px-4 py-2 mt-4 rounded-lg"
+              hover="bg-[#F2B602]"
+            >
+              Register Now
+            </button>
+          </a>
+
           <div class="w-full mt-12 mb-4 border border-white"></div>
 
           <div class="flex flex-col">
