@@ -48,7 +48,7 @@ const events: TimelineEvent[] = [
   {
     icon: 'ph:user',
     title: 'On-the-ground Assessment.',
-    date: '2 February 2023 - 4 February 2023',
+    date: '1 February 2023 - 3 February 2023',
     steps: ['Lecture Simulation.', 'Face-to-face Interview.', 'Coding test.'],
     description:
       'This is a follow-up assessment to complete your application process. You will be tested based on your skills and knowledge in programming and communication skills.',
