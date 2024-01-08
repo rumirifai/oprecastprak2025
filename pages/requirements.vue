@@ -16,7 +16,7 @@ const events: TimelineEvent[] = [
   {
     icon: 'ph:newspaper-clipping',
     title: 'Registration & Pre-screening Assessment.',
-    date: '20 January 2023 - 26 January 2023',
+    date: '14 January 2024 - 20 January 2024',
     steps: [
       'Register yourself by filling the form.',
       'Upload the requirement files (CV, Cover Letter) in .pdf files.',
@@ -28,14 +28,14 @@ const events: TimelineEvent[] = [
       'Introduce yourself',
       'Tell the reason why you want to be part of us',
       'Make it as creative as possible',
-      'Use hashtag #oprectasprak2023',
+      'Use hashtag #oprectasprak2024',
       'Make sure your Instagram account is not private',
     ],
   },
   {
     icon: 'ph:laptop',
     title: 'Online Assessment.',
-    date: '29 January 2023, starts at 1 PM WIB',
+    date: '23 January 2024, starts at 1 PM WIB',
     steps: [
       'This test is intended to assess the technical skills relevant to the subject(s) you have chosen.',
       'You will be given a chance to answer some questions in 5 hours ( From 01.00 PM to 06.00 PM ).',
@@ -48,14 +48,14 @@ const events: TimelineEvent[] = [
   {
     icon: 'ph:user',
     title: 'On-the-ground Assessment.',
-    date: '1 February 2023 - 3 February 2023',
+    date: '27 January 2024 - 29 January 2024',
     steps: ['Lecture Simulation.', 'Face-to-face Interview.', 'Coding test.'],
     description:
       'This is a follow-up assessment to complete your application process. You will be tested based on your skills and knowledge in programming and communication skills.',
   },
   {
     icon: 'ph:speaker-high',
-    date: '7 February 2023',
+    date: '1 February 2024',
     title: 'Results Announcement.',
     steps: [
       "Selected applicants will be announced on Laboratory Assistant Line Official Account's posts feed.",
@@ -64,8 +64,8 @@ const events: TimelineEvent[] = [
 ]
 
 const contacts = [
-  'Fauzan Azmi Dwicahyo (Line ID : AncuL001)',
-  'Ariq Hakim Ruswadi (LINE ID : ariqhakim2002)',
+  'Rizky Ramadhan Sudjarmono (Line ID : rizky09oktober2004)',
+  'Muhammad Naufal Nur Ramadhan (LINE ID : tanyasamasatpam)',
 ]
 </script>
 
@@ -86,14 +86,14 @@ const contacts = [
             Requirements</span
           >
           <span text="1rem white">
-            Want to take part in Lab Assistant 2023 selection? <br />There are
+            Want to take part in Lab Assistant 2024 selection? <br />There are
             some things that you must prepare beforehand. <br />
             See the timeline for more information.
           </span>
 
           <a
             class="cursor-pointer"
-            href="https://s.id/daftarAsprak2023"
+            href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
             target="_blank"
           >
             <button

@@ -3,8 +3,8 @@ import { defineNuxtConfig } from 'nuxt/config'
 export default defineNuxtConfig({
   app: {
     head: {
-      title: 'Open Recruitment | Asprak 2023' || '',
-      titleTemplate: 'Oprec Asprak 2023 | %s',
+      title: 'Open Recruitment | Asprak 2024' || '',
+      titleTemplate: 'Oprec Asprak 2024 | %s',
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -16,7 +16,7 @@ export default defineNuxtConfig({
       link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
     },
   },
-  modules: ['@unocss/nuxt', '@nuxt/image-edge'],
+  modules: ['@unocss/nuxt', '@nuxt/image-edge', "@nuxt/image"],
   unocss: {
     preflight: true,
     uno: true,

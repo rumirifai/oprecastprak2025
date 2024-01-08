@@ -33,13 +33,13 @@ const faqs: FaqItem[] = [
   {
     question: 'Upload jawaban online assessment kemana?',
     answer:
-      'Upload di web ini, nanti akan muncul button upload di halaman timeline recruitment pada tanggal 29 Januari 2023 dimulai pukul 13.00 WIB hingga 18.00 WIB.',
+      'Upload di web ini, nanti akan muncul button upload di halaman timeline recruitment pada tanggal 23 Januari 2024 dimulai pukul 13.00 WIB hingga 18.00 WIB.',
   },
 ]
 
 const contacts = [
-  'Fauzan Azmi Dwicahyo (Line ID : AncuL001)',
-  'Ariq Hakim Ruswadi (LINE ID : ariqhakim2002)',
+  'Rizky Ramadhan Sudjarmono (Line ID : rizky09oktober2004)',
+  'Muhammad Naufal Nur Ramadhan (LINE ID : tanyasamasatpam)',
 ]
 </script>
 

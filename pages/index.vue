@@ -27,13 +27,6 @@ const courses = [
 ]
 
 const members = [
-  'abim',
-  'anop',
-  'dicky',
-  'evan',
-  'fahrio',
-  'rahman',
-  'rian',
   'alvaro',
   'ariq',
   'faiq',
@@ -41,7 +34,14 @@ const members = [
   'irka',
   'muaz',
   'rasyid',
-  'rihlan',
+  'osmond',
+  'andaru',
+  'fakhri',
+  'felicia',
+  'mahardika',
+  'mutaz',
+  'naufal',
+  'rizky',
 ]
 </script>
 
@@ -64,7 +64,7 @@ const members = [
           font="extrabold"
         >
           <span class="text-[#fdca32]">Open Recruitment</span>
-          <span>Asisten Praktikum <span>2023</span></span>
+          <span>Asisten Praktikum <span>2024</span></span>
           <div class="justify-center w-full mt-16" flex="~">
             <button
               class="block rounded-full"
@@ -172,7 +172,7 @@ const members = [
           <p text="xl:2xl xl" class="mt-4 leading-loose">
             Register now to be a part of our big family. <br />
             Gain all the benefits and valuable experience in your life! <br />
-            - Laboratory Assistant 2023
+            - Laboratory Assistant 2024
           </p>
           <NuxtLink to="/requirements">
             <button
