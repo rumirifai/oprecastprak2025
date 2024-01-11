@@ -91,14 +91,11 @@ const contacts = [
             See the timeline for more information.
           </span>
 
-          <a
-            class="cursor-pointer"
-            href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-            target="_blank"
-          >
+          <a class="cursor-pointer" href="" target="_blank">
             <button
               class="bg-[#fdca32] text-black px-4 py-2 mt-4 rounded-lg"
               hover="bg-[#F2B602]"
+              hidden
             >
               Register Now
             </button>
