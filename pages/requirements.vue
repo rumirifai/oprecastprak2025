@@ -3,6 +3,11 @@ useHead({
   title: 'Requirements',
 })
 
+const m_link: TimelineLink = {
+  title: 'Online Assessment',
+  url: 'https://drive.google.com/drive/folders/1RDWNYwcUttUpD_5-nKUyH3i7gSV8ksuP?usp=sharing'
+}
+
 const events: TimelineEvent[] = [
   {
     icon: 'ph:files',
@@ -43,7 +48,7 @@ const events: TimelineEvent[] = [
       'Test questions will be given at 01.00 PM and submission link will be closed at 06.00 PM.',
       'After going through 2 stages of registration with various assessments, qualified applicants will be invited to Line multichat and proceed to the final assessment.',
     ],
-    links: [],
+    links: [m_link],
   },
   {
     icon: 'ph:user',
@@ -91,13 +96,15 @@ const contacts = [
             See the timeline for more information.
           </span>
 
-          <a class="cursor-pointer" href="https://forms.gle/r7obaAyAqTutSs9j7" target="_blank">
+          <a class="cursor-pointer" href="" target="_blank">
             <button
               class="bg-[#fdca32] text-black px-4 py-2 mt-4 rounded-lg"
               hover="bg-[#F2B602]"
+              hidden
             >
               Register Now
             </button>
+            
           </a>
 
           <div class="w-full mt-12 mb-4 border border-white"></div>
