@@ -3,11 +3,6 @@ useHead({
   title: 'Requirements',
 })
 
-const m_link: TimelineLink = {
-  title: 'Online Assessment',
-  url: 'https://drive.google.com/drive/folders/1RDWNYwcUttUpD_5-nKUyH3i7gSV8ksuP?usp=sharing'
-}
-
 const events: TimelineEvent[] = [
   {
     icon: 'ph:files',
@@ -48,7 +43,7 @@ const events: TimelineEvent[] = [
       'Test questions will be given at 01.00 PM and submission link will be closed at 06.00 PM.',
       'After going through 2 stages of registration with various assessments, qualified applicants will be invited to Line multichat and proceed to the final assessment.',
     ],
-    links: [m_link],
+    links: [],
   },
   {
     icon: 'ph:user',
