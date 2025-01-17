@@ -78,7 +78,7 @@ const members = ['fakhri', 'sultan', 'panji', 'tegar', 'rumi']
         >
           <div class="mt-8">
             <h3 text="4xl" font="bold">
-              <span text="[#fdca32]">What</span> you do =?
+              <span text="[#fdca32]">What</span> you do?
             </h3>
             <ul class="mt-8 ml-8 list-disc" text="lg" font="light">
               <li>As facilitator, share your knowledge</li>
