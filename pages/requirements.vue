@@ -8,7 +8,7 @@ const events: TimelineEvent[] = [
     icon: 'ph:files',
     title: 'Make sure you fit the requirements.',
     steps: [
-      'Active Student of Teknik Informatika Universitas Padjadjaran and currently in third year (2021) or second year (2022).',
+      'Active Student of Teknik Informatika Universitas Padjadjaran and currently in final year (2021), third year (2022) or second year (2023).',
       'Minimum GPA 3.00.',
       'Have minimum grade B for the subject you wanted.',
     ],
