@@ -18,7 +18,7 @@ const events: TimelineEvent[] = [
     title: 'Registration & Pre-screening Assessment.',
     date: '17 January 2025 - 22 January 2025',
     steps: [
-      'Register yourself by filling the <a href="https://bit.ly/RegistAsPrak2025" target="_blank">form</a>.',
+      'Register yourself by filling the form',
       'Upload the requirement files (CV, Cover Letter) in .pdf files.',
       'Upload your Academic Transcript from students.unpad.ac.id',
       'Submit Instagram URL/ link for your short introduction video. The rules of the video are :',
@@ -27,9 +27,12 @@ const events: TimelineEvent[] = [
       'Make sure your face is shown and your voice can be heard clearly',
       'Introduce yourself',
       'Tell the reason why you want to be part of us',
-      'Make it as creative as possible',
+      'Make it as creative as possiable',
       'Use hashtag #oprectasprak2025',
       'Make sure your Instagram account is not private',
+    ],
+    links: [
+      { title: 'Registration Link', url: 'https://bit.ly/RegistAsPrak2025' },
     ],
   },
   {
