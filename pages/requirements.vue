@@ -16,7 +16,7 @@ const events: TimelineEvent[] = [
   {
     icon: 'ph:newspaper-clipping',
     title: 'Registration & Pre-screening Assessment.',
-    date: '14 January 2024 - 20 January 2024',
+    date: '17 January 2025 - 22 January 2025',
     steps: [
       'Register yourself by filling the form.',
       'Upload the requirement files (CV, Cover Letter) in .pdf files.',
@@ -28,14 +28,14 @@ const events: TimelineEvent[] = [
       'Introduce yourself',
       'Tell the reason why you want to be part of us',
       'Make it as creative as possible',
-      'Use hashtag #oprectasprak2024',
+      'Use hashtag #oprectasprak2025',
       'Make sure your Instagram account is not private',
     ],
   },
   {
     icon: 'ph:laptop',
     title: 'Online Assessment.',
-    date: '23 January 2024, starts at 1 PM WIB',
+    date: '23 January 2025',
     steps: [
       'This test is intended to assess the technical skills relevant to the subject(s) you have chosen.',
       'You will be given a chance to answer some questions in 5 hours ( From 01.00 PM to 06.00 PM ).',
@@ -48,14 +48,14 @@ const events: TimelineEvent[] = [
   {
     icon: 'ph:user',
     title: 'On-the-ground Assessment.',
-    date: '27 January 2024 - 29 January 2024',
+    date: '27 January 2025 - 29 January 2025',
     steps: ['Lecture Simulation.', 'Face-to-face Interview.', 'Coding test.'],
     description:
       'This is a follow-up assessment to complete your application process. You will be tested based on your skills and knowledge in programming and communication skills.',
   },
   {
     icon: 'ph:speaker-high',
-    date: '1 February 2024',
+    date: '2 February 2025',
     title: 'Results Announcement.',
     steps: [
       "Selected applicants will be announced on Laboratory Assistant Line Official Account's posts feed.",
@@ -65,7 +65,7 @@ const events: TimelineEvent[] = [
 
 const contacts = [
   'Rizky Ramadhan Sudjarmono (Line ID : rizky09oktober2004)',
-  'Muhammad Naufal Nur Ramadhan (LINE ID : tanyasamasatpam)',
+  'Muhamad Rumi Rifai (Line ID : rifaikikifaqih)',
 ]
 </script>
 
@@ -86,7 +86,7 @@ const contacts = [
             Requirements</span
           >
           <span text="1rem white">
-            Want to take part in Lab Assistant 2024 selection? <br />There are
+            Want to take part in Lab Assistant 2025 selection? <br />There are
             some things that you must prepare beforehand. <br />
             See the timeline for more information.
           </span>
@@ -99,7 +99,6 @@ const contacts = [
             >
               Register Now
             </button>
-            
           </a>
 
           <div class="w-full mt-12 mb-4 border border-white"></div>

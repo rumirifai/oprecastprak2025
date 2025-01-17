@@ -3,20 +3,20 @@ import { defineNuxtConfig } from 'nuxt/config'
 export default defineNuxtConfig({
   app: {
     head: {
-      title: 'Open Recruitment | Asprak 2024' || '',
-      titleTemplate: 'Oprec Asprak 2024 | %s',
+      title: 'Open Recruitment | Asprak 2025',
+      titleTemplate: 'Oprec Asprak 2025 | %s',
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
         {
           name: 'description',
-          content: 'Website Open Recruitment Asprak 2023',
+          content: 'Website Open Recruitment Asprak 2025',
         },
       ],
       link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
     },
   },
-  modules: ['@unocss/nuxt', '@nuxt/image-edge', "@nuxt/image"],
+  modules: ['@unocss/nuxt', '@nuxt/image-edge', '@nuxt/image'],
   unocss: {
     preflight: true,
     uno: true,

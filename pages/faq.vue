@@ -39,7 +39,7 @@ const faqs: FaqItem[] = [
 
 const contacts = [
   'Rizky Ramadhan Sudjarmono (Line ID : rizky09oktober2004)',
-  'Muhammad Naufal Nur Ramadhan (LINE ID : tanyasamasatpam)',
+  'Muhamad Rumi Rifai (Line ID : rifaikikifaqih)',
 ]
 </script>
 

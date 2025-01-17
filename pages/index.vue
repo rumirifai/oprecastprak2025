@@ -26,23 +26,7 @@ const courses = [
   'Web Programming',
 ]
 
-const members = [
-  'alvaro',
-  'ariq',
-  'faiq',
-  'fauzan',
-  'irka',
-  'muaz',
-  'rasyid',
-  'osmond',
-  'andaru',
-  'fakhri',
-  'felicia',
-  'mahardika',
-  'mutaz',
-  'naufal',
-  'rizky',
-]
+const members = ['Rizky', 'Fakhri', 'Sultan', 'Panji', 'Tegar', 'Rumi']
 </script>
 
 <template>
@@ -64,7 +48,7 @@ const members = [
           font="extrabold"
         >
           <span class="text-[#fdca32]">Open Recruitment</span>
-          <span>Asisten Praktikum <span>2024</span></span>
+          <span>Asisten Praktikum <span>2025</span></span>
           <div class="justify-center w-full mt-16" flex="~">
             <button
               class="block rounded-full"
@@ -94,24 +78,24 @@ const members = [
         >
           <div class="mt-8">
             <h3 text="4xl" font="bold">
-              <span text="[#fdca32]">What</span> you do
+              <span text="[#fdca32]">What</span> you do =?
             </h3>
             <ul class="mt-8 ml-8 list-disc" text="lg" font="light">
-              <li>as facilitator, share your knowledge</li>
-              <li>delivering the subject to students</li>
-              <li>create, conduct, and examine assignments</li>
-              <li>responsible for laboratory maintenance</li>
+              <li>As facilitator, share your knowledge</li>
+              <li>Delivering the subject to students</li>
+              <li>Create, conduct, and examine assignments</li>
+              <li>Responsible for laboratory maintenance</li>
             </ul>
           </div>
           <div class="mt-8" xl="mt-24">
             <h3 text="4xl" font="bold">
-              <span text="[#fdca32]">Why</span> joining
+              <span text="[#fdca32]">Why</span> joining?
             </h3>
             <ul class="mt-8 ml-8 list-disc" text="lg" font="light">
-              <li>gain valuable experience</li>
-              <li>further develop and refine your skills</li>
-              <li>gain confidence</li>
-              <li>and many other benefits...</li>
+              <li>Gain valuable experience</li>
+              <li>Further develop and refine your skills</li>
+              <li>Gain confidence</li>
+              <li>And many other benefits...</li>
             </ul>
           </div>
         </div>
@@ -172,7 +156,7 @@ const members = [
           <p text="xl:2xl xl" class="mt-4 leading-loose">
             Register now to be a part of our big family. <br />
             Gain all the benefits and valuable experience in your life! <br />
-            - Laboratory Assistant 2024
+            - Laboratory Assistant 2025
           </p>
           <NuxtLink to="/requirements">
             <button
