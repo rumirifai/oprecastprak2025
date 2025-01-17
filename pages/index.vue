@@ -26,7 +26,7 @@ const courses = [
   'Web Programming',
 ]
 
-const members = ['Rizky', 'Fakhri', 'Sultan', 'Panji', 'Tegar', 'Rumi']
+const members = ['rizky', 'fakhri', 'sultan', 'panji', 'tegar', 'rumi']
 </script>
 
 <template>
