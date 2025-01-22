@@ -16,7 +16,7 @@ const events: TimelineEvent[] = [
   {
     icon: 'ph:newspaper-clipping',
     title: 'Registration & Pre-screening Assessment.',
-    date: '17 January 2025 - 22 January 2025',
+    date: '17 January 2025 - 29 January 2025',
     steps: [
       'Register yourself by filling the form',
       'Upload the requirement files (CV, Cover Letter) in .pdf files.',
@@ -38,7 +38,7 @@ const events: TimelineEvent[] = [
   {
     icon: 'ph:laptop',
     title: 'Online Assessment.',
-    date: '23 January 2025',
+    date: '31 January 2025',
     steps: [
       'This test is intended to assess the technical skills relevant to the subject(s) you have chosen.',
       'You will be given a chance to answer some questions in 5 hours ( From 01.00 PM to 06.00 PM ).',
@@ -51,14 +51,14 @@ const events: TimelineEvent[] = [
   {
     icon: 'ph:user',
     title: 'On-the-ground Assessment.',
-    date: '27 January 2025 - 29 January 2025',
+    date: '3 February 2025 - 5 February 2025',
     steps: ['Lecture Simulation.', 'Face-to-face Interview.', 'Coding test.'],
     description:
       'This is a follow-up assessment to complete your application process. You will be tested based on your skills and knowledge in programming and communication skills.',
   },
   {
     icon: 'ph:speaker-high',
-    date: '2 February 2025',
+    date: '8 February 2025',
     title: 'Results Announcement.',
     steps: [
       "Selected applicants will be announced on Laboratory Assistant Line Official Account's posts feed.",
